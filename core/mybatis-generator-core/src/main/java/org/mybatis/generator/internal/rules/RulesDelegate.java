@@ -190,6 +190,11 @@ public class RulesDelegate implements Rules {
     }
 
     @Override
+    public boolean generateBaseColumnPrefixList() {
+        return rules.generateBaseColumnPrefixList();
+    }
+
+    @Override
     public boolean generateBlobColumnList() {
         return rules.generateBlobColumnList();
     }

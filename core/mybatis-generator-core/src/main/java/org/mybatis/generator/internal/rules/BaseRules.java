@@ -455,6 +455,11 @@ public abstract class BaseRules implements Rules {
     }
 
     @Override
+    public boolean generateBaseColumnPrefixList() {
+        return true;
+    }
+
+    @Override
     public boolean generateBlobColumnList() {
         if (isModelOnly) {
             return false;
