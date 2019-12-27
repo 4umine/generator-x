@@ -83,4 +83,4 @@ and u.delete_flag = 0
 </select>
 ```
 
-注意：表前缀是根据表名最后一个单词的首字母定的，比如 t_user，那生成的就是 u.id, u.username 等，如果是 t_order，那生成的是 o.id，o.user_id 等。
+注意：表前缀是根据表名最后一个单词的首字母定的，比如 t_user，那生成的就是 u.id, u.username 等，如果是 t_order，那生成的是 o.id，o.user_id 等。所以在写 sql 的时候需要注意关联表的表明是否和主表冲突。
